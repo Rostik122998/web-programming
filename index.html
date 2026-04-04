@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<button id="theme-btn" style="margin-bottom: 15px;">Змінити тему</button>
 <div class="main-container">
     <header>
         <h1>Хома Ростислав</h1>
@@ -46,6 +47,26 @@
         <p><b>Cyberlingo</b> — розробляю освітню платформу, яка допомагає звичайним користувачам опанувати правила "цифрової гігієни". Я пишу матеріали про те, як створювати складні паролі, як розпізнавати шахраїв у мережі та як надійно захистити свою електронну пошту.</p>
     </div>
     <hr>
-</div>
+	<h3>Відгуки роботодавців</h3>
+        <div id="comments">Завантаження...</div>
+    </div>
+
+    <footer id="footer-info" style="text-align: center; margin-top: 20px; font-size: 12px;"></footer>
+
+    <div id="modal" class="modal">
+        <div style="background: white; padding: 20px; border: 1px solid black; max-width: 300px; margin: 10% auto;">
+            <button id="close-modal" style="float: right;">X</button>
+            <h3>Зворотний зв'язок</h3>
+            <form action="https://formspree.io/f/mnjooqpp" method="POST">
+                <input type="text" name="name" placeholder="Ім'я" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="tel" name="phone" placeholder="Телефон" required><br><br>
+                <textarea name="message" placeholder="Повідомлення" required></textarea><br><br>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
